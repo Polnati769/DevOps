@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Project - Card Layout</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #eef2f3;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 30px 15px;   /* reduced padding */
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;  /* slightly smaller */
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 8px;
+      opacity: 0.9;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;     /* reduced gap */
+      max-width: 1000px;
+      margin: 20px auto;   /* less margin around container */
+      padding: 10px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 18px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      color: #764ba2;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    .card p, .card ul {
+      text-align: left;
+      font-size: 0.95rem;
+      margin: 0;  /* remove extra spacing */
+    }
+
+    .card ul {
+      padding-left: 18px;
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #667eea;
+    }
+
+    footer {
+      text-align: center;
+      background: #764ba2;
+      color: white;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DevOps Project Web Application</h1>
+    <p>Understanding DevOps: Tools, Uses, and Lifecycle</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h2>What is DevOps?</h2>
+      <p>DevOps is a combination of development and operations practices aimed at automating and integrating processes between software development and IT teams. It focuses on continuous delivery, automation, and improving collaboration.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <h2>DevOps Tools</h2>
+      <ul>
+        <li>Git & GitHub – Version Control</li>
+        <li>Jenkins – Continuous Integration</li>
+        <li>Docker – Containerization</li>
+        <li>Kubernetes – Container Orchestration</li>
+        <li>Ansible – Configuration Management</li>
+        <li>Terraform – Infrastructure as Code</li>
+        <li>Prometheus & Grafana – Monitoring</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚀</div>
+      <h2>Uses of DevOps</h2>
+      <ul>
+        <li>Faster software delivery</li>
+        <li>Improved collaboration and productivity</li>
+        <li>Increased deployment success rates</li>
+        <li>Better scalability and availability</li>
+        <li>Automated and streamlined processes</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔄</div>
+      <h2>DevOps Lifecycle</h2>
+      <ul>
+        <li><strong>Plan:</strong> Define and plan software features</li>
+        <li><strong>Develop:</strong> Code the application</li>
+        <li><strong>Build:</strong> Compile and build the code</li>
+        <li><strong>Test:</strong> Automated testing</li>
+        <li><strong>Release:</strong> Deploy the software</li>
+        <li><strong>Deploy:</strong> Make software live</li>
+        <li><strong>Operate:</strong> Maintain and monitor</li>
+        <li><strong>Monitor:</strong> Analyze and improve</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <pre>Created by 
+               -P.P.N.Prasanna-</pre>
+  </footer>
+
+</body>
+</html>
